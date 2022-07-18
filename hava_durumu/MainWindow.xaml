@@ -1,0 +1,21 @@
+﻿<Window x:Class="hava_durumu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hava_durumu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="230*"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="chkOto" Content="Otomatik Güncelle" HorizontalAlignment="Left" Margin="20,282,0,0" VerticalAlignment="Top" Checked="ChkOto_IsChecked" Unchecked="ChkOto_IsChecked"/>
+        <Label x:Name="lblBTC" Content="1 BTC" HorizontalAlignment="Left" Margin="118,106,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label x:Name="lblTL" Content="0 TL" HorizontalAlignment="Left" Margin="39.343,106,0,0" VerticalAlignment="Top" FontSize="22" Grid.Column="1"/>
+        <Label Content="==" HorizontalAlignment="Left" Margin="232,108,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="lblZaman" Content="Son Güncelleme : Güncellenmedi" HorizontalAlignment="Left" Margin="118,150,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
